@@ -1,0 +1,19 @@
+<aside class="menu">
+    <p class="menu-label">
+        Nested views
+    </p>
+    <ul class="menu-list">
+        <li><a ui-sref="nested.content" ui-sref-active-eq="is-active">Root</a></li>
+    </ul>
+    <p class="menu-label">
+        Sub-views
+    </p>
+    <ul class="menu-list">
+        <li>
+            <ul>
+                <li><a ui-sref="nested.content.parameter({ param1: 1, param2: 'first' })" ui-sref-active-eq="is-active">First</a></li>
+                <li><a ui-sref="nested.content.parameter({ param1: 2, param2: 'second' })" ui-sref-active-eq="is-active">Second</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
