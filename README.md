@@ -1,6 +1,9 @@
 # AngularJs UI-Router Example for D2642
 
-This is an example application for routing for the AngularJs lecture. You will need a HTTP server running the application in order to prevent [CORS][e5225c35] error messages when AngularJs tries to fetch HTML templates. This README explains how to use the npm package [http-server][fd8d4fca], but you can use [express][33ac7ffd] too, but it requires configuration.
+This is an example application for routing and showing partials for the AngularJs lecture of DH2642.
+
+#### Note
+You will need a HTTP server running the application in order to prevent [CORS][e5225c35] error messages when AngularJs tries to fetch HTML templates. This README explains how to use the npm package [http-server][fd8d4fca], but you can use [express][33ac7ffd] too, but it requires configuration.
 
   [e5225c35]: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing "CORS"
   [33ac7ffd]: https://www.npmjs.com/package/express "Express"

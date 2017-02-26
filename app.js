@@ -71,7 +71,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 }]);
 
 /*
-*   Params controller
+*   Params controller: takes the params from the $state object and makes it
+*   available in the view through the $scope.
 */
 app.controller('paramsCtrl', ['$state', '$scope', function($state, $scope) {
     // Bind parameters to the scope
@@ -80,7 +81,7 @@ app.controller('paramsCtrl', ['$state', '$scope', function($state, $scope) {
 }]);
 
 /*
-*   Header directive
+*   Header directive: Custom directive for showing the header.
 */
 app.directive('customHeader', [function() {
     return {
