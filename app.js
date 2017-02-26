@@ -55,8 +55,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     };
 
     // 404
+    // otherwise: Special route name which takes routes which are not registered.
     var error = {
-        name: 'otherwise', // Special route name
+        name: 'otherwise',
         url: '*path',
         templateUrl: 'views/404.html'
     };
@@ -67,7 +68,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     $stateProvider.state(viewsContent);
     $stateProvider.state(viewsParams);
     $stateProvider.state(error);
-
 }]);
 
 /*

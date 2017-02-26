@@ -8,10 +8,13 @@
     <!-- AngularJs and UI-Router libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <!-- Our code -->
     <script src="app.js"></script>
 </head>
 <body>
+    <!-- The header is inserted in the views within the ui-view -->
     <div ui-view></div>
+    <!-- As the footer should always be here, we can include it here -->
     <div ng-include="'views/partials/footer'"></div>
 </body>
 </html>
