@@ -15,11 +15,18 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         templateUrl: 'views/home.html'
     };
 
+    // Contact
+    var contact = {
+        name: 'contact',
+        url: '/contact',
+        templateUrl: 'views/contact.html'
+    };
+
     /*
     *   Nested views
     */
     // Abstract state => "groups states" (cannot explicitly be active)
-    var views = {
+    var nested = {
         name: 'nested',
         url: '/nested-views',
         abstract: true,
@@ -28,7 +35,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     };
 
     // First state of nested state (empty url makes initial)
-    var viewsContent = {
+    var nestedContent = {
         name: 'nested.content',
         url: '', // this makes it the initial state
         // Use the named ui-views to target the content
@@ -43,7 +50,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     };
 
     // Parameter view
-    var viewsParams = {
+    var nestedParams = {
         name: 'nested.content.parameter',
         url: '/:param1/:param2',
         views: {
@@ -64,9 +71,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
     // Register the states
     $stateProvider.state(home);
-    $stateProvider.state(views);
-    $stateProvider.state(viewsContent);
-    $stateProvider.state(viewsParams);
+    $stateProvider.state(contact);
+    $stateProvider.state(nested);
+    $stateProvider.state(nestedContent);
+    $stateProvider.state(nestedParams);
     $stateProvider.state(error);
 }]);
 
